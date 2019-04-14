@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+  //初始化编辑器
+  function init() {
+    var ifr = document.getElementById("editor");
+    var doc = ifr.contentDocument || ifr.contentWindow.document; // W3C || IE
+    doc.designMode = "on";
+    doc.contentEditable = true;
+    doc.write('<html><head><style>body{margin:3px;word - wrap:break-word;word -break:break-all;}</style ></head><body>helloworld！</body></html>');
+    console.log(doc.body.innerHTML);
+  }
+ 
+  //设置选定的文本为粗体/正常
+  function setBold() {
+    var win = document.getElementById("editor").contentWindow;
+    win.document.execCommand("Bold", false, null);
+    win.focus();
+  }
+
+  //设置选定的文本为粗体斜体/正常
+  function setItalic() {
+    var win = document.getElementById("editor").contentWindow;
+    win.document.execCommand("Italic", false, null);
+    win.focus();
+  }
+</script>
+
+<p>
+    <input type="button" id="bBtn" value="B" style="font-weight:bold" onclick="setBold();"/>
+    <input type="button" id="bBtn" value="I" style="font-style: italic;" onclick="setItalic();"/>
+    <input type="button" id="bBtn" value="Q" style="font-style: italic;" onclick="setQuote();"/>
+</p>
+
+<p>
+    <iframe id="editor" width="600px" height="400px" style="border:solid 1px;"></iframe>
+</p>
+ 
+<script type="text/javascript">
+  init();
+</script>
+</body>
+</html>

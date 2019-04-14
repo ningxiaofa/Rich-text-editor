@@ -8,26 +8,26 @@
 3.常用的富文本编辑器
 https://cloud.tencent.com/developer/article/1141421  //常用的六个富文本编辑器
 
-1：:功能齐全 tinymce|TinyMCE | The Most Advanced WYSIWYG HTML Editor
+a：功能齐全 tinymce|TinyMCE | The Most Advanced WYSIWYG HTML Editor
 官方网址：https://www.tinymce.com/
 
 TinyMCE是一个轻量级的基于浏览器的所见即所得编辑器，由JavaScript写成。它对IE6+和Firefox1.5+都有着非常良好的支持。
 
-2：百度 ueditor|UEditor - 首页
+b：百度 ueditor|UEditor - 首页
 官方网址：http://ueditor.baidu.com/website/
 
 UEditor是由百度web前端研发部开发所见即所得富文本web编辑器，具有轻量，可定制，注重用户体验等特点，开源基于MIT协议，允许自由使用和修改代码...
 
-3：经典的ckeditor|CKEditor.com
+c：经典的ckeditor|CKEditor.com
 官方网址：https://ckeditor.com/
 
-4：经典的kindeditor|在线HTML编辑器
+d：经典的kindeditor|在线HTML编辑器
 官方网址：http://kindeditor.net/demo.php
 
-5：wysiwyg|微型、开源的Bootstrap所见即所得（WYSIWYG）富文本编辑器 -- 由MindMup贡献
+e：wysiwyg|微型、开源的Bootstrap所见即所得（WYSIWYG）富文本编辑器 -- 由MindMup贡献
 官方网站http://www.bootcss.com/p/bootstrap-wysiwyg/
 
-6：html5编辑器|Squire
+f：html5编辑器|Squire
 官方网站http://neilj.github.io/Squire/
 
 另附三款源码：

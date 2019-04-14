@@ -1,0 +1,82 @@
+富文本编辑器  ning先森 2019.4.14
+1.介绍
+富文本编辑器，Rich Text Editor, 简称 RTE, 是一种可内嵌于浏览器，所见即所得的文本编辑器.它提供类似于 Microsoft Word 的编辑功能，容易被不会编写 HTML 的用户并需要设置各种文本格式的用户所喜爱.
+
+2.原理
+富文本编辑器又称为WYSIWYG(所见即所得)，其本质就是在一个页面元素中嵌入HTML代码，并且这个元素可以像文档输入框一样进行文本的编辑，它同时还可以设置文本样式。写博客的工具就是一个功能丰富的富文本编辑器，编辑邮件以及论坛发贴都用到富文本编辑器。
+
+3.常用的富文本编辑器
+https://cloud.tencent.com/developer/article/1141421  //常用的六个富文本编辑器
+
+1：:功能齐全 tinymce|TinyMCE | The Most Advanced WYSIWYG HTML Editor
+官方网址：https://www.tinymce.com/
+
+TinyMCE是一个轻量级的基于浏览器的所见即所得编辑器，由JavaScript写成。它对IE6+和Firefox1.5+都有着非常良好的支持。
+
+2：百度 ueditor|UEditor - 首页
+官方网址：http://ueditor.baidu.com/website/
+
+UEditor是由百度web前端研发部开发所见即所得富文本web编辑器，具有轻量，可定制，注重用户体验等特点，开源基于MIT协议，允许自由使用和修改代码...
+
+3：经典的ckeditor|CKEditor.com
+官方网址：https://ckeditor.com/
+
+4：经典的kindeditor|在线HTML编辑器
+官方网址：http://kindeditor.net/demo.php
+
+5：wysiwyg|微型、开源的Bootstrap所见即所得（WYSIWYG）富文本编辑器 -- 由MindMup贡献
+官方网站http://www.bootcss.com/p/bootstrap-wysiwyg/
+
+6：html5编辑器|Squire
+官方网站http://neilj.github.io/Squire/
+
+另附三款源码：
+wangEditor|GitHub - wangfupeng1988/wangEditor: wangEditor —— 轻量级web富文本框
+wangEditor—— 轻量级 web 富文本编辑器，配置方便，使用简单。支持 IE10+ 浏览器。
+官网：www.wangEditor.com
+文档：www.kancloud.cn/wangfupeng/wangeditor3/332599
+源码：github.com/wangfupeng1988/wangEditor
+tower用的编辑器|GitHub - mycolorway/simditor: An Easy and Fast WYSIWYG Editor
+github:https://github.com/mycolorway/simditor
+
+summernote 编辑器|GitHub - summernote/summernote: Super simple WYSIWYG editor
+github ：https://github.com/summernote/summernote
+
+
+4.实现一个简单的富文本编辑器
+//个人实现 [TBD]
+
+参考:
+https://www.cnblogs.com/muyunren/p/8250596.html  //富文本编辑器开发原理
+http://www.cnblogs.com/keepfool/archive/2011/12/21/2295335.html  //所见即所得富文本编辑器实现原理
+https://www.cnblogs.com/longhx/p/5422003.html  //实现一个简易的富文本编辑器(一)
+
+
+
+5.存在的问题
+https://www.cnblogs.com/longhx/p/5422003.html  //实现一个简易的富文本编辑器(一)
+存在问题:
+设置背景色,不能取消背景色
+原因是:背景色设置为固定颜色,每次重复执行设置背景色.
+解决办法:TBD   //与使用引用[“”]是相同的问题,无法取消引用
+
+
+6.额外补充
+TBD
+
+
++---------------------------------------------------------------------------------------------------资料参考
+备注:
+WYSIWYG  ['wɪzɪ'wɪg]
+abbr. 所见即所得（What You See Is What You Get）
+
+为了不影响当前 document, 通常的做法是在页面中嵌入一个 iframe 元素，然后对这个 iframe 内的 document（通过 iframe.contentWindow.document 获得）进行操作。
+
+#c8cbcf  //click点击选中后
+#DEE0E2  //hover悬浮
+https://w3c.github.io/editing/execCommand.html 
+https://developer.mozilla.org/zh-CN/docs/Web/API/Document/execCommand#%E5%91%BD%E4%BB%A4 //命令大全 英文版
+
+https://www.cnblogs.com/leong-min/p/6483523.html //Javascript中document.execCommand()的用法
+
+http://neilj.github.io/Squire/  //使用这个富文本编辑器为切入点,搞明白原理[正合适]  //发现源代码很多,怎么组织的代码也不是很清楚
